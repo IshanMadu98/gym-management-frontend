@@ -1,0 +1,49 @@
+.landing-page {
+  .hero-section {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 100px 0;
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  .features-section {
+    padding: 60px 0;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    nz-card {
+      margin: 10px;
+      text-align: center;
+    }
+  }
+
+  .footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+
+    .social-links {
+      margin-top: 10px;
+
+      a {
+        color: white;
+        margin: 0 10px;
+      }
+    }
+  }
+}

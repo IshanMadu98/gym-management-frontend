@@ -1,0 +1,42 @@
+<div class="gym-management">
+  <h2>Gym Management</h2>
+  <div class="text-end">
+    <button nz-button nzType="primary" class="me-4" (click)="onAddGym()">
+      Add Gym
+    </button>
+  </div>
+
+  <nz-table [nzData]="gyms" [nzLoading]="isLoading">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Owner Name</th>
+        <th>Email</th>
+        <th>Telephone Number</th>
+        <th>Location</th>
+        <th>AnyDesk ID</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let gym of gyms">
+        <td>{{ gym.id }}</td>
+        <td>{{ gym.name }}</td>
+        <td>{{ gym.ownerName }}</td>
+        <td>{{ gym.email }}</td>
+        <td>{{ gym.telephoneNumber }}</td>
+        <td>{{ gym.location }}</td>
+        <td>{{ gym.anyDeskId }}</td>
+        <td>
+          <button nz-button nzType="link" (click)="onUpdateGym(gym)">
+            Edit
+          </button>
+          <button nz-button nzType="link" nzDanger (click)="deleteGym(gym.id)">
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
+</div>

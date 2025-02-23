@@ -1,1 +1,57 @@
-<p>landing-page works!</p>
+<!-- landing-page.component.html -->
+<div class="landing-page">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1 class="hero-title">Welcome to Our Gym</h1>
+          <p class="hero-subtitle">Achieve your fitness goals with our state-of-the-art facilities and expert trainers.</p>
+          <button nz-button nzType="primary" nzSize="large" routerLink="/login">Get Started</button>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/images/gym-hero.jpg" alt="Gym" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="container">
+      <h2 class="text-center">Why Choose Us?</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <nz-card>
+            <h3>Modern Equipment</h3>
+            <p>We provide the latest fitness equipment for all your workout needs.</p>
+          </nz-card>
+        </div>
+        <div class="col-md-4">
+          <nz-card>
+            <h3>Expert Trainers</h3>
+            <p>Our certified trainers are here to guide you every step of the way.</p>
+          </nz-card>
+        </div>
+        <div class="col-md-4">
+          <nz-card>
+            <h3>Flexible Plans</h3>
+            <p>Choose from a variety of membership plans tailored to your needs.</p>
+          </nz-card>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2023 Gym Management. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" nz-button nzType="link"><i nz-icon nzType="facebook"></i></a>
+        <a href="#" nz-button nzType="link"><i nz-icon nzType="twitter"></i></a>
+        <a href="#" nz-button nzType="link"><i nz-icon nzType="instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</div>

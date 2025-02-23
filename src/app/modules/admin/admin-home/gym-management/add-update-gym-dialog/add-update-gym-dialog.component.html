@@ -1,0 +1,85 @@
+<div mat-dialog-title class="d-flex justify-content-between">
+  <div>
+    <p class="mb-0 mt-1 ps-2 dialog-title">{{ title }}</p>
+  </div>
+  <div class="justify-content-end">
+    <button [mat-dialog-close]="true" mat-icon-button>
+      <mat-icon class="dialog-icon">close</mat-icon>
+    </button>
+  </div>
+</div>
+<hr />
+<form [formGroup]="gymForm" (ngSubmit)="onSubmit()">
+  <div mat-dialog-content>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <nz-form-item class="w-100">
+          <div class="w-100">
+            <nz-form-label nzRequired>Name</nz-form-label>
+            <nz-form-control nzErrorTip="Name is required!">
+              <input nz-input class="w-100" formControlName="name" placeholder="Enter gym name" />
+            </nz-form-control>
+          </div>
+        </nz-form-item>
+      </div>
+      <div class="col-12 col-md-6">
+        <nz-form-item class="w-100">
+          <div class="w-100">
+            <nz-form-label nzRequired>Owner Name</nz-form-label>
+            <nz-form-control nzErrorTip="Owner Name is required!">
+              <input nz-input class="w-100" formControlName="ownerName" placeholder="Enter owner name" />
+            </nz-form-control>
+          </div>
+        </nz-form-item>
+      </div>
+      <div class="col-12 col-md-6">
+        <nz-form-item class="w-100">
+          <div class="w-100">
+            <nz-form-label nzRequired>Email</nz-form-label>
+            <nz-form-control nzErrorTip="Email is required!">
+              <input nz-input class="w-100" formControlName="email" placeholder="Enter email" />
+            </nz-form-control>
+          </div>
+        </nz-form-item>
+      </div>
+      <div class="col-12 col-md-6">
+        <nz-form-item class="w-100">
+          <div class="w-100">
+            <nz-form-label nzRequired>Telephone Number</nz-form-label>
+            <nz-form-control nzErrorTip="Telephone Number is required!">
+              <input nz-input class="w-100" formControlName="telephoneNumber" placeholder="Enter telephone number" />
+            </nz-form-control>
+          </div>
+        </nz-form-item>
+      </div>
+      <div class="col-12 col-md-6">
+        <nz-form-item class="w-100">
+          <div class="w-100">
+            <nz-form-label nzRequired>Location</nz-form-label>
+            <nz-form-control nzErrorTip="Location is required!">
+              <input nz-input class="w-100" formControlName="location" placeholder="Enter location" />
+            </nz-form-control>
+          </div>
+        </nz-form-item>
+      </div>
+      <div class="col-12 col-md-6">
+        <nz-form-item class="w-100">
+          <div class="w-100">
+            <nz-form-label nzRequired>AnyDesk ID</nz-form-label>
+            <nz-form-control nzErrorTip="AnyDesk ID is required!">
+              <input nz-input class="w-100" formControlName="anyDeskId" placeholder="Enter AnyDesk ID" />
+            </nz-form-control>
+          </div>
+        </nz-form-item>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex justify-content-end mt-3 mb-4 me-4">
+    <button class="small-btn-width btn-radius me-2" [mat-dialog-close]="true" nzType="primary" nzGhost nz-button>
+      Cancel
+    </button>
+    <button class="btn-radius small-btn-width" nzType="primary" nz-button>
+      {{ btnTitle }}
+    </button>
+  </div>
+</form>
